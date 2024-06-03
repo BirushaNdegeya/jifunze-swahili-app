@@ -9,7 +9,7 @@ type cardProps = {
 export default function Card ({ text }: cardProps) {
    return (
       <View>
-         <Text>{text}</Text>
+         <Text className="text-3xl">{text}</Text>
       </View>
    );
 }
