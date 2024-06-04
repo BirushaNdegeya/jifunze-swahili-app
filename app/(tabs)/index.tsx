@@ -1,16 +1,12 @@
 import { StyleSheet, ScrollView } from 'react-native';
-
-import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
+
 
 export default function Mlango() {
   return (
-    <ScrollView style={{ flex: 1}}>
-      <View style={styles.container}>
-        {/* <Text style={styles.title}>Tab One</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/index.tsx" /> */}
-        <Text>
+    <ScrollView style={{ flex: 1 }}>
+      <View lightColor="#eee" darkColor="rgba(255,255,255,0.1)" style={styles.container}>
+        <Text lightColor='#000' darkColor='#fff' style={styles.text}>
           Asemaye sarufi anajulisha mpango barabara wa lugha fulani. Mpango huo umepashwa kuendekezwa kwa taratibu za kila aina. Bila kufahamu vema mipango ya lugha, mtu hatausema wala kuuandika sawa
 
           Lugha ni chombo kionyeshacho upeo wa kustaarabika kwa wananchi, ndimo utamaduni unajaliwa uhai wa kusaidia wananchi kufahamiana, kuelewana na kuunga umoja. Kabila hailitafaulu kuendelea vema bila lugha inayotukuka mioyoni mwa wakaaji. Kweli, lugha ni chombo cha samani kuu.
@@ -37,18 +33,11 @@ export default function Mlango() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
+  text: {
     fontSize: 20,
-    fontWeight: 'bold',
+    textAlign: 'justify'
   },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
-  },
-});
+  container: {
+    padding: 8
+  }
+})
